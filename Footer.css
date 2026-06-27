@@ -1,0 +1,143 @@
+.footer {
+  background: #111111; /* Sleek dark black background */
+  color: #FFFFFF; /* White text for contrast */
+  padding: 4rem 8% 2rem 8%;
+  border-top: 1px solid #222222;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #333333;
+}
+
+.footer-brand h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
+
+.footer-brand h2 span {
+  color: var(--brand-pink);
+}
+
+.footer-brand p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #CCCCCC; /* Light gray for readability */
+  margin-bottom: 1.5rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #222222; /* Dark gray for icons */
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  border: 1px solid #333333;
+  color: #FFFFFF;
+}
+
+.social-icon:hover {
+  background: var(--brand-pink);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(255, 107, 157, 0.3);
+  border-color: var(--brand-pink);
+}
+
+.footer-links h3,
+.footer-hours h3,
+.footer-location h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #FFFFFF;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #CCCCCC;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--brand-blue);
+  padding-left: 5px;
+}
+
+.footer-hours p,
+.footer-location p {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  color: #CCCCCC;
+}
+
+.footer-hours span {
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.footer-map-container {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 2px solid var(--brand-pink);
+}
+
+.footer-map-container iframe {
+  display: block;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #888888; /* Darker gray for the copyright text */
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 3rem 5% 1.5rem 5%;
+  }
+  .footer-container {
+    gap: 2rem;
+    text-align: center;
+  }
+  .footer-socials {
+    justify-content: center;
+  }
+  .footer-links a:hover {
+    padding-left: 0;
+  }
+}
